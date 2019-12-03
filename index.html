@@ -22,8 +22,19 @@
     color: black;
     background-color: whitesmoke;
   }
+  
+  .filter{
+    filter: invert(1);
+  }
+  
+  .btn{
+    border: 1px solid gray;
+    border-radius: 0.7rem;
+    background-color: gray;
+    padding: 0.3rem 0.8rem;
+  }
 </style>
-<body>
+<body class="filter">
   <div>
     <h3>
       Hi
@@ -35,7 +46,15 @@
       Front-end Developer
       (Using Angular)
     </h4>
-    
+    <button class="btn">
+      dark mode
+    </button>
   </div>
+  
+<script>
+  document.getElementById("btn").addEventListener("click",()=>{
+    document.body.classList.toggle("filter");
+  });  
+</script>
 </body>
 </html>
