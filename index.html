@@ -11,10 +11,8 @@
    box-sizing: box-sizing;
   }
   
-  body{
+  .body{
     display: flex;
-   
-    
     align-items: center;
     justify-content: center;
     background-color: lightyellow;
@@ -25,7 +23,15 @@
     background-color: whitesmoke;
 
   }
-  
+  .div{
+    background-color:gray;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .filter{
     filter: invert(1);
   }
@@ -37,10 +43,15 @@
     padding: 0.3rem 0.8rem;
     outline: none;
   }
+  
+  .btn::active{
+    outline: none;
+  }
 </style>
-<body>
-  <div style="background-color: width: 100vw;height: 100vh; gray; text-align: center;">
-    <h3>
+<body class="body">
+  <div style="">
+   <div>
+      <h3>
       Hi
     </h3>
     <h3>
@@ -53,6 +64,7 @@
     <button class="btn" id="btn">
       dark mode.
     </button>
+    </div>
   </div>
   
 <script>
